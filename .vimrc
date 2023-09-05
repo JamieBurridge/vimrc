@@ -1,7 +1,5 @@
 " VIMSCRIPT ---------------------------------------------------------------------
 
-colorscheme elflord
-
 " Disable vi backwards compatibility
 set nocompatible
 
@@ -38,6 +36,10 @@ call plug#begin()
     Plug 'vim-airline/vim-airline-themes'
     let g:airline_symbols_ascii = 1
 
+    " Theme
+    Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+
 call plug#end()
 
-
+" COLORS 
+colorscheme moonfly
